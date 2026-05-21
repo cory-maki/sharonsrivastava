@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Sharon Srivastava | Writer and Observer | California</title>
+<meta name="description" content="Sharon Srivastava writes on presence, grounded leadership, motherhood, and intentional living as a daily practice."/>
+<link rel="canonical" href="https://sharonsrivastava.netlify.app/"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Sharon Srivastava | Writer and Observer"/>
+<meta property="og:description" content="Sharon Srivastava writes on presence, grounded leadership, motherhood, and intentional living as a daily practice."/>
+<meta property="og:image" content="https://sharonsrivastava.netlify.app/images/hero.jpg"/>
+<meta property="og:url" content="https://sharonsrivastava.netlify.app/"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://sharonsrivastava.netlify.app/#person",
+      "name": "Sharon Srivastava",
+      "jobTitle": "Writer and Observer",
+      "url": "https://sharonsrivastava.netlify.app/",
+      "image": "https://sharonsrivastava.netlify.app/images/hero.jpg",
+      "description": "Sharon Srivastava is a writer and observer whose work explores presence, grounded leadership, motherhood, daily rituals, and intentional living.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "California",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://x.com/s_srivastava100",
+        "https://www.pinterest.com/sharonsrivastava01",
+        "https://www.beatstars.com/sharonsrivastava",
+        "https://soundcloud.com/sharonsrivastava01",
+        "https://bio.site/sharonsrivastava",
+        "https://linktr.ee/sharonsrivastava01",
+        "https://issuu.com/sharonsrivastava01",
+        "https://www.goodreads.com/user/show/197244827-sharon-srivastava",
+        "https://github.com/sharonsrivastava",
+        "https://huggingface.co/SharonSrivastava",
+        "https://www.tumblr.com/sharonsrivastava01",
+        "https://bandcamp.com/sharonsrivastava",
+        "https://vimeo.com/sharonsrivastava01",
+        "https://wikialpha.co/wiki/User:SharonSrivastava",
+        "https://www.podbean.com/user-w2kg5Kuqgu83",
+        "https://www.reddit.com/user/sharon-srivastava01/",
+        "https://clarity.fm/sharonsrivastava",
+        "https://www.dailymotion.com/SharonSrivastava",
+        "https://mastodon.social/@sharonsrivastava",
+        "https://sharonsrivastava.org/",
+        "https://sharonsrivastavascholarship.com/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sharonsrivastava.netlify.app/#website",
+      "url": "https://sharonsrivastava.netlify.app/",
+      "name": "Sharon Srivastava",
+      "description": "Writing on presence, grounded leadership, motherhood, and the practice of intentional living.",
+      "publisher": { "@id": "https://sharonsrivastava.netlify.app/#person" }
+    }
+  ]
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  const _sb=supabase.createClient('https://aowblircaymwuymcmllh.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvd2JsaXJjYXltd3V5bWNtbGxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMzExMjcsImV4cCI6MjA2NzkwNzEyN30.qS7jxVwu83zEYMvxNo7C_2dtVrSZ6wYIFiNtoN69UkQ');
+  const _cid='Sharon Srivastava';
+  async function loadSBLinks(){
+    const[{data:soc},{data:news}]=await Promise.all([
+      _sb.from('social_media').select('*').eq('client_id',_cid),
+      _sb.from('news_links').select('*').eq('client_id',_cid)
+    ]);
+    const render=(ids,data)=>ids.forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el||!data)return;
+      el.innerHTML='';
+      data.forEach(l=>{
+        const a=document.createElement('a');
+        a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';a.title=l.name;
+        a.innerHTML='<img src="'+l.icon+'" alt="'+l.name+'" style="width:30px;height:30px;border-radius:4px"/>';
+        el.appendChild(a);
+      });
+    });
+    render(['sml-soc-home'],soc);
+    render(['sml-news-home'],news);
+  }
+  document.addEventListener('DOMContentLoaded',loadSBLinks);
+})();
+</script>
+</head>
+<body>
+
+<!-- ══ STICKY NAV ══════════════════════════════════════════════════ -->
+<nav id="main-nav">
+  <a class="nav-logo" href="/">Sharon<span> Srivastava</span></a>
+  <ul class="nav-links">
+    <li><a class="active" href="/">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══ HERO ═══════════════════════════════════════════════════════ -->
+<div class="h-hero">
+  <div class="h-inner">
+    <div class="h-photo"><img src="images/hero.jpg" alt="Sharon Srivastava, writer and observer"/></div>
+    <div>
+      <h1 class="h-name">Sharon Srivastava</h1>
+      <p class="h-role">Writing on Presence, Leadership, and the Practice of Living with Intention</p>
+      <p class="h-desc">Sharon Srivastava is a writer and observer. Her work is grounded in a straightforward premise: presence is a form of strength, and steadiness is not a passive state but a deliberate one.</p>
+      <div class="h-loc">California</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ABOUT TEASER ═══════════════════════════════════════════════ -->
+<div class="h-about">
+  <div class="ha-inner">
+    <div class="ha-text">
+      <p class="eyebrow">About</p>
+      <h2 class="sec-title">A Quiet Practice of Attention</h2>
+      <p>Sharon Srivastava writes from the details of daily life: the structure of a morning ritual, the way a child's observation shifts a room, and the proportion that nature offers when human concerns feel too large. These are not background details. They are the substance of her inquiry.</p>
+      <p>Motherhood occupies a central place in her thinking, not as a personal story but as a source of transferable wisdom. The sustained focus, patience, and emotional regulation that parenting demands translate directly into how Sharon understands <a href="motherhood-teaches-leadership.html">grounded leadership in everyday life</a>: composed, oriented toward what is actually happening rather than what should be happening.</p>
+      <p>Her perspective has been shaped by time spent across different geographies, including California and New York. Resilience, in her work, is built from small repeated practices &mdash; rituals that hold the shape of a day, habits that make stability reliable rather than aspirational. You can read more about <a href="about.html">her approach to writing and observation</a>, or follow her notes on <a href="https://www.tumblr.com/sharonsrivastava01" target="_blank" rel="noopener">her Tumblr archive</a>.</p>
+      <a class="ha-link" href="about.html">Learn more &rarr;</a>
+    </div>
+    <div><img class="ha-photo" src="images/hero-secondary.jpg" alt="Sharon Srivastava at golden hour, hand to throat in a moment of stillness"/></div>
+  </div>
+</div>
+
+<!-- ══ SOCIAL + PRESS ACCORDION ═══════════════════════════════════ -->
+<div class="acc-section" style="background:var(--off)">
+  <div class="acc-wrap">
+    <button class="acc-btn" onclick="tog(this,'s-home')">Follow Sharon Srivastava on Social Media <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="s-home"><div id="sml-soc-home" class="social-media-list"></div></div>
+    <button class="acc-btn" onclick="tog(this,'n-home')">Sharon Srivastava in the Press <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="n-home"><div id="sml-news-home" class="social-media-list"></div></div>
+  </div>
+</div>
+
+<!-- ══ LATEST ARTICLES ════════════════════════════════════════════ -->
+<div class="h-press">
+  <div class="pi">
+    <p class="eyebrow">Writing &amp; Observation</p>
+    <h2 class="sec-title">Recent Essays</h2>
+    <div class="cards">
+      <a class="card card-article" href="discipline-presence-steadiness-daily-practice.html">
+        <div class="ct-img"><img src="images/article-1.jpg" alt="The discipline of presence as a daily practice"/></div>
+        <div class="cb">
+          <div class="cb-pub">Presence</div>
+          <div class="cb-hl">The Discipline of Presence: Why Steadiness Is a Daily Practice</div>
+          <div class="cb-yr">March 2026</div>
+        </div>
+      </a>
+      <a class="card card-article" href="motherhood-teaches-leadership.html">
+        <div class="ct-img"><img src="images/article-2.jpg" alt="What motherhood teaches about leadership"/></div>
+        <div class="cb">
+          <div class="cb-pub">Leadership</div>
+          <div class="cb-hl">What Motherhood Teaches About Leadership</div>
+          <div class="cb-yr">April 2026</div>
+        </div>
+      </a>
+      <a class="card card-article" href="small-rituals-sustained-lives.html">
+        <div class="ct-img"><img src="images/article-3.jpg" alt="Small rituals and sustained lives"/></div>
+        <div class="cb">
+          <div class="cb-pub">Rituals</div>
+          <div class="cb-hl">Small Rituals, Sustained Lives: How Repetition Builds Resilience</div>
+          <div class="cb-yr">May 2026</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ CONTACT TEASER ═════════════════════════════════════════════ -->
+<div class="h-contact">
+  <div class="hc-inner">
+    <div>
+      <p class="eyebrow">Get in Touch</p>
+      <h2 class="sec-title">Contact</h2>
+      <form class="cf" onsubmit="return false">
+        <div><label>Your Name</label><input type="text" placeholder="Your name"/></div>
+        <div><label>Email</label><input type="email" placeholder="email@example.com"/></div>
+        <div><label>Message</label><textarea placeholder="Your message..."></textarea></div>
+        <button class="btn-sm" type="submit">Send Message</button>
+      </form>
+    </div>
+    <div class="hcp">
+      <h3 class="hc-title">Let's connect.</h3>
+      <p>For inquiries related to writing, media, or collaboration, the contact form is the best starting point. Sharon Srivastava welcomes thoughtful messages connected to her work and areas of focus.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 Sharon Srivastava. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script>
+function tog(btn,id){
+  const c=document.getElementById(id),open=c.classList.contains('open');
+  document.querySelectorAll('.acc-body').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.acc-btn').forEach(e=>e.classList.remove('open'));
+  if(!open){c.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>
