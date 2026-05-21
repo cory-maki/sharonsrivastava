@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About Sharon Srivastava | Writer and Observer | California</title>
+<meta name="description" content="Sharon Srivastava is a writer and observer whose work explores presence, grounded leadership, motherhood, daily rituals, and the proportion nature offers."/>
+<link rel="canonical" href="https://sharonsrivastava.netlify.app/about.html"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile"/>
+<meta property="og:title" content="About Sharon Srivastava | Writer and Observer"/>
+<meta property="og:description" content="Sharon Srivastava is a writer and observer whose work explores presence, grounded leadership, motherhood, daily rituals, and the proportion nature offers."/>
+<meta property="og:image" content="https://sharonsrivastava.netlify.app/images/hero.jpg"/>
+<meta property="og:url" content="https://sharonsrivastava.netlify.app/about.html"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://sharonsrivastava.netlify.app/#person",
+      "name": "Sharon Srivastava",
+      "jobTitle": "Writer and Observer",
+      "url": "https://sharonsrivastava.netlify.app/",
+      "image": "https://sharonsrivastava.netlify.app/images/hero.jpg",
+      "description": "Sharon Srivastava is a writer and observer whose work explores presence, grounded leadership, motherhood, daily rituals, and intentional living.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "California",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://x.com/s_srivastava100",
+        "https://www.pinterest.com/sharonsrivastava01",
+        "https://www.beatstars.com/sharonsrivastava",
+        "https://soundcloud.com/sharonsrivastava01",
+        "https://bio.site/sharonsrivastava",
+        "https://linktr.ee/sharonsrivastava01",
+        "https://issuu.com/sharonsrivastava01",
+        "https://www.goodreads.com/user/show/197244827-sharon-srivastava",
+        "https://github.com/sharonsrivastava",
+        "https://huggingface.co/SharonSrivastava",
+        "https://www.tumblr.com/sharonsrivastava01",
+        "https://bandcamp.com/sharonsrivastava",
+        "https://vimeo.com/sharonsrivastava01",
+        "https://wikialpha.co/wiki/User:SharonSrivastava",
+        "https://www.podbean.com/user-w2kg5Kuqgu83",
+        "https://www.reddit.com/user/sharon-srivastava01/",
+        "https://clarity.fm/sharonsrivastava",
+        "https://www.dailymotion.com/SharonSrivastava",
+        "https://mastodon.social/@sharonsrivastava",
+        "https://sharonsrivastava.org/",
+        "https://sharonsrivastavascholarship.com/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://sharonsrivastava.netlify.app/#website",
+      "url": "https://sharonsrivastava.netlify.app/",
+      "name": "Sharon Srivastava",
+      "publisher": { "@id": "https://sharonsrivastava.netlify.app/#person" }
+    },
+    {
+      "@type": "AboutPage",
+      "url": "https://sharonsrivastava.netlify.app/about.html",
+      "name": "About Sharon Srivastava",
+      "mainEntity": { "@id": "https://sharonsrivastava.netlify.app/#person" }
+    }
+  ]
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  const _sb=supabase.createClient('https://aowblircaymwuymcmllh.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvd2JsaXJjYXltd3V5bWNtbGxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMzExMjcsImV4cCI6MjA2NzkwNzEyN30.qS7jxVwu83zEYMvxNo7C_2dtVrSZ6wYIFiNtoN69UkQ');
+  const _cid='Sharon Srivastava';
+  async function loadSBLinks(){
+    const[{data:soc},{data:news}]=await Promise.all([
+      _sb.from('social_media').select('*').eq('client_id',_cid),
+      _sb.from('news_links').select('*').eq('client_id',_cid)
+    ]);
+    const render=(ids,data)=>ids.forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el||!data)return;
+      el.innerHTML='';
+      data.forEach(l=>{
+        const a=document.createElement('a');
+        a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';a.title=l.name;
+        a.innerHTML='<img src="'+l.icon+'" alt="'+l.name+'" style="width:30px;height:30px;border-radius:4px"/>';
+        el.appendChild(a);
+      });
+    });
+    render(['sml-soc-about'],soc);
+    render(['sml-news-about'],news);
+  }
+  document.addEventListener('DOMContentLoaded',loadSBLinks);
+})();
+</script>
+</head>
+<body>
+
+<!-- ══ NAV ═══════════════════════════════════════════════════════ -->
+<nav id="main-nav">
+  <a class="nav-logo" href="/">Sharon<span> Srivastava</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══ PAGE HERO ═════════════════════════════════════════════════ -->
+<div class="pg-hero">
+  <p class="eyebrow" style="color:rgba(255,255,255,.55)">Learn More</p>
+  <h1>Sharon Srivastava</h1>
+  <p class="pg-sub">Writer, observer, and grounded voice on leadership and intentional living.</p>
+</div>
+
+<!-- ══ PROFILE CARD ══════════════════════════════════════════════ -->
+<div class="pc-wrap">
+  <div class="pc">
+    <div class="pc-ph"><img src="images/hero.jpg" alt="Sharon Srivastava portrait"/></div>
+    <div>
+      <div class="pc-nm">Sharon Srivastava</div>
+      <div class="pc-rl">Writer and Observer</div>
+      <div class="pc-lc">California</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ABOUT SECTIONS + SIDEBAR ══════════════════════════════════ -->
+<div class="am-wrap">
+  <div class="am-inner">
+    <div>
+
+      <div class="csec">
+        <p class="cey">The Practice</p>
+        <h2>A Writer Whose Work Begins in the Ordinary</h2>
+        <p>Sharon Srivastava is a writer and observer whose work begins in the ordinary: the structure of a morning, the rhythm of a season, the way repetition becomes meaning over time. Based in California, Sharon writes from close observation rather than instruction, and her essays return again and again to a single question &mdash; what does it take to remain present?</p>
+        <p>Her core interest is presence, not as a concept, but as a practice. She examines what it requires to remain composed under uncertainty, to observe without judgment, and to lead from a place of emotional steadiness rather than performance. These are not abstract questions for Sharon. They emerge from close observation of daily life across many years and many contexts, and surface in pieces like <a href="discipline-presence-steadiness-daily-practice.html">her writing on steadiness as a deliberate state</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Motherhood &amp; Leadership</p>
+        <h2>What Daily Care Teaches About Leading Well</h2>
+        <p>Motherhood has been a defining thread in this observation. The demands it places on a person are real and unglamorous: sustained awareness, patience without passivity, the capacity to hold a steady frame even when circumstances resist predictability. Sharon Srivastava examines these demands not as personal narrative but as a source of transferable wisdom &mdash; the throughline of <a href="motherhood-teaches-leadership.html">her essay on parenting as leadership training</a>.</p>
+        <p>The skills that motherhood builds are leadership skills. The emotional regulation it requires, the sustained presence it asks for, the way it teaches a person to respond rather than react &mdash; these are qualities Sharon sees as central to how anyone leads well. You can find more short reflections on this theme in <a href="https://soundcloud.com/sharonsrivastava01" target="_blank" rel="noopener">her audio notes on SoundCloud</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Daily Rituals</p>
+        <h2>Stability Built From Small, Repeated Acts</h2>
+        <p>Daily rituals provide the structural frame through which much of Sharon's thinking moves. Not productivity systems, and not self-improvement programs. Rituals in the quieter sense: repeated acts that make a day legible, that anchor a person in the present, that offer stability without drama. The ritual is reliable because it is repeated, and its reliability is its value &mdash; a premise she develops further in <a href="small-rituals-sustained-lives.html">her essay on repetition and resilience</a>.</p>
+        <p>Resilience, in her work, is not built from dramatic moments. It is built from small, repeated practices: the structure of a morning, the return to a familiar ritual, the act of doing something ordinary well. These rituals provide emotional scaffolding that does not require explanation or performance. Sharon shares occasional reading notes related to this in <a href="https://www.goodreads.com/user/show/197244827-sharon-srivastava" target="_blank" rel="noopener">her Goodreads shelf</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Geography &amp; Observation</p>
+        <h2>A Perspective Shaped by Place</h2>
+        <p>Sharon Srivastava's perspective has been formed across geographies. She has spent time in California and New York, among other places, and each context has sharpened a particular kind of observation: how surroundings shape behavior, how culture sets expectations, how a person carries their values through different environments.</p>
+        <p>This global curiosity is not expressed as comparison or commentary. It is expressed as a practiced way of seeing &mdash; the same way of seeing that surfaces across <a href="https://www.pinterest.com/sharonsrivastava01" target="_blank" rel="noopener">her Pinterest boards on landscape and light</a> and in shorter posts on <a href="https://x.com/s_srivastava100" target="_blank" rel="noopener">her writing on X</a>. Sharon carries that awareness back into the work.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Nature &amp; Proportion</p>
+        <h2>The Pace of Things That Grow Without Being Watched</h2>
+        <p>Nature runs consistently through Sharon Srivastava's writing, not as symbol but as structural reference. The pace of seasons. The patience of things that grow without being watched. The indifference of weather to human timelines. Nature, for Sharon, is a model for proportion. It is a reminder that steadiness is not inertia but continuity.</p>
+        <p>Her work is deliberate, grounded, and resistant to dramatic framing. It does not claim authority over the reader. It offers observation and asks for consideration in return. This is what presence looks like in practice: not a performance of insight, but a sustained willingness to look closely at what is there. Longer-form pieces are occasionally archived at <a href="https://issuu.com/sharonsrivastava01" target="_blank" rel="noopener">Sharon's reading collection on Issuu</a>.</p>
+      </div>
+
+    </div>
+
+    <aside class="sidebar-facts">
+      <div class="sb-box">
+        <div class="sb-title">Quick Facts</div>
+        <div class="fr"><span class="fl">Name</span><span class="fv">Sharon Srivastava</span></div>
+        <div class="fr"><span class="fl">Role</span><span class="fv">Writer &amp; Observer</span></div>
+        <div class="fr"><span class="fl">Based In</span><span class="fv">California</span></div>
+        <div class="fr"><span class="fl">Focus</span><span class="fv">Presence &amp; Leadership</span></div>
+        <div class="fr"><span class="fl">Themes</span><span class="fv">Motherhood, Rituals, Nature</span></div>
+        <div class="fr"><span class="fl">Approach</span><span class="fv">Observation, not instruction</span></div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ══ SOCIAL + PRESS ACCORDION ══════════════════════════════════ -->
+<div class="acc-section" style="background:var(--off)">
+  <div class="acc-wrap">
+    <button class="acc-btn" onclick="tog(this,'s-about')">Follow Sharon Srivastava on Social Media <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="s-about"><div id="sml-soc-about" class="social-media-list"></div></div>
+    <button class="acc-btn" onclick="tog(this,'n-about')">Sharon Srivastava in the Press <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="n-about"><div id="sml-news-about" class="social-media-list"></div></div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 Sharon Srivastava. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script>
+function tog(btn,id){
+  const c=document.getElementById(id),open=c.classList.contains('open');
+  document.querySelectorAll('.acc-body').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.acc-btn').forEach(e=>e.classList.remove('open'));
+  if(!open){c.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>
